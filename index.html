@@ -27,7 +27,7 @@
     <h1>Дизайн-студия «Нёрдс»</h1>
     <!-- TODO: Тут будет слайдер. Блок, которые размечать пока не нужно-->
     <section>
-      <h2>Наши работы</h2> <!-- TODO: Можно так назвать? -->
+      <h2>Наши работы</h2>
       <ul>
         <li>
           <h3>
@@ -80,11 +80,11 @@
   </main>
 
   <footer>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-      </ul>
+    <ul>
+      <li><a href="#">Вконтакте</a></li>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграм</a></li>
+    </ul>
     <p>
       Давайте дружить, это выгодно!
     </p>
@@ -93,21 +93,16 @@
     </p>
   </footer>
 
+  <section>
     <h2>Напишите нам</h2>
     <form action="#" method="POST">
-      <label>
-        Ваше имя:<br>
-        <input type="text" name="name">
-      </label><br>
-      <label>
-        Ваш e-mail:<br>
-        <input type="email" name="e-mail">
-      </label><br>
-      <label>
-        Текст письма:<br>
-        <textarea name="letter" id="letter-field" cols="30" rows="10">В свободной форме</textarea>
-      </label><br>
-      <input type="submit" value="Отправить">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" name="name" id="name-field">
+      <label for="e-mail-field">Ваш e-mail:</label>
+      <input type="email" name="e-mail" id="e-mail-field">
+      <label for="letter-field">Текст письма:</label>
+      <textarea name="letter" id="letter-field" cols="30" rows="10">В свободной форме</textarea>
+      <button type="submit">Отправить</button>
     </form>
   </section>
 

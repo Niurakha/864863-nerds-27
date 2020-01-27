@@ -145,19 +145,13 @@
   <section>
     <h2>Напишите нам</h2>
     <form action="#" method="POST">
-      <label>
-        Ваше имя:<br>
-        <input type="text" name="name">
-      </label><br>
-      <label>
-        Ваш e-mail:<br>
-        <input type="email" name="e-mail">
-      </label><br>
-      <label>
-        Текст письма:<br>
-        <textarea name="letter" id="letter-field" cols="30" rows="10">В свободной форме</textarea>
-      </label><br>
-      <input type="submit" value="Отправить">
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" name="name" id="name-field">
+      <label for="e-mail-field">Ваш e-mail:</label>
+      <input type="email" name="e-mail" id="e-mail-field">
+      <label for="letter-field">Текст письма:</label>
+      <textarea name="letter" id="letter-field" cols="30" rows="10">В свободной форме</textarea>
+      <button type="submit">Отправить</button>
     </form>
   </section>
 
