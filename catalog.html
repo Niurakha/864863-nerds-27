@@ -28,41 +28,29 @@
       <h2>Фильтр товаров</h2>
       <form action="#" method="POST">
         <!-- TODO: Здесь будет фильтр стоимость-->
-        <h3>Сетка</h3>
-        <label>
-          <input type="radio" name="grid" value="Адаптивная">
-          Адаптивная
-        </label><br>
-        <label>
-          <input type="radio" name="grid" value="Фиксированная">
-          Фиксированная
-        </label><br>
-        <label>
-          <input type="radio" name="grid" value="Резиновая">
-          Резиновая
-        </label>
-        <h3>Особенности:</h3>
-        <label>
-          <input type="checkbox" name="slider">
-          Слайдер
-        </label><br>
-        <label>
-          <input type="checkbox" name="advantages">
-          Блок преимуществ
-        </label><br>
-        <label>
-          <input type="checkbox" name="news">
-          Новости
-        </label><br>
-        <label>
-          <input type="checkbox" name="gallery">
-          Галерея
-        </label><br>
-        <label>
-          <input type="checkbox" name="cart">
-          Корзина
-        </label><br>
-        <input type="submit" value="Показать">
+        <fieldset>
+          <legend>Сетка</legend>
+          <input type="radio" name="grid" id="adaptive">
+          <label for="adaptive">Адаптивная</label>
+          <input type="radio" name="grid" id="fixed">
+          <label for="fixed">Фиксированная</label>
+          <input type="radio" name="grid" id="rubber">
+          <label for="rubber">Резиновая</label>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <input type="checkbox" name="slider" id="slider">
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" name="advantages" id="advantages">
+          <label for="advantages"> Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news">
+          <label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="cart" id="cart">
+          <label for="cart">Корзина</label>
+        </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <!-- TODO: Здесь будет сортировка-->
