@@ -155,12 +155,18 @@
   <section>
     <h2>Напишите нам</h2>
     <form action="#" method="POST">
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field">
-      <label for="e-mail-field">Ваш e-mail:</label>
-      <input type="email" name="e-mail" id="e-mail-field">
-      <label for="letter-field">Текст письма:</label>
-      <textarea name="letter" id="letter-field" cols="30" rows="10">В свободной форме</textarea>
+      <p>
+        <label for="appointment-name">Ваше имя:</label>
+        <input type="text" name="name" id="appointment-name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="appointment-e-mail">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="appointment-e-mail" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="letter-field">Текст письма:</label>
+        <textarea name="letter" id="letter-field">В свободной форме</textarea>
+      </p>
       <button type="submit">Отправить</button>
     </form>
   </section>
