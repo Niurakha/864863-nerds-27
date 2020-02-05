@@ -28,6 +28,20 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="GET">
         <fieldset>
+          <legend>Стоимость:</legend>
+          <div class="slider-price">
+            <div class="slider-range"></div>
+            <span class="left"></span>
+            <span class="right"></span>
+          </div>
+          <label aria-label="Цена от" for="appointment-min-price">От</label>
+          <input type="text" name="min-price" id="appointment-min-price" value="0">
+          <label aria-label="Цена до" for="appointment-max-price">До</label>
+          <input type="text" name="max-price" id="appointment-max-price" value="15000">
+        </fieldset>
+        <span></span>
+        <span></span>
+        <fieldset>
           <legend>Сетка</legend>
           <ul>
             <li>
@@ -71,8 +85,28 @@
         </fieldset>
         <button type="submit">Показать</button>
       </form>
+      <div class="sorter">
+        <p>Сортировать:</p>
+        <ul>
+          <li>
+            <button>По цене</button>
+          </li>
+          <li>
+            <button>По типу</button>
+          </li>
+          <li>
+            <button>По названию</button>
+          </li>
+          <li>
+            <button class="sorter-down" aria-label="О большего к меньшему"></button>
+          </li>
+          <li>
+            <button class="sorter-up" aria-label="О меньшего к большему"></button>
+          </li>
+
+        </ul>
+      </div>
     </section>
-    <!-- TODO: Здесь будет сортировка-->
     <section>
       <h2 class="visually-hidden">Шаблоны</h2>
       <ul>
