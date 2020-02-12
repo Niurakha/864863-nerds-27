@@ -56,21 +56,6 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-
-
-.main-header {
-  background-color: #eeeeee;
-}
-
-
-.main-header-logo img:hover {
-  opacity: 0.8;
-}
-
-.main-header-logo img:active {
-  opacity: 0.3;
-}
-
 .site-navigation,
 .slider-list,
 .service-list,
@@ -80,6 +65,54 @@ input[type="radio"].visually-hidden {
 .pagination-item,
 .footer-social-list {
   list-style: none;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+
+/*Временно для сетки*/
+
+  background-color: #f6d8ba;
+}
+
+.main-header {
+  display: flex;
+  min-height: 132px;
+
+  background-color: #eeeeee;
+
+/*Временно для сетки*/
+
+  background-color: #baf5f6;
+}
+
+.main-navigation {
+  display: flex;
+
+/*Временно для сетки*/
+
+  background-color: #eabaf6;
+}
+
+.main-header-logo img:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+/*Временно для сетки*/
+
+  background-color: #baf6cf;
 }
 
 .site-navigation a {
@@ -105,14 +138,34 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.service {
+  margin-bottom: 160px;
+}
+
 .service-list {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+/*Временно для сетки*/
+
+  background-color: #699ebc;
+}
+
+.service-list li {
+  width: 300px;
+
+/*Временно для сетки*/
+
+  background-color: #8269bc;
 }
 
 .service-list h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
@@ -133,7 +186,25 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+.index-columns {
+  display: flex;
+
+/*Временно для сетки*/
+
+  background-color: #7a2e7a;
+}
+
+.features {
+  width: 650px;
+
+/*Временно для сетки*/
+
+  background-color: #78f851;
+}
+
 .features-text-big {
+  margin: 0;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -144,6 +215,15 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.statistics {
+  width: 208px;
+  margin-left: 153px;
+
+/*Временно для сетки*/
+
+  background-color: #78f851;
 }
 
 .statistics-title {
@@ -163,6 +243,17 @@ input[type="radio"].visually-hidden {
 
 .statistics-list sup {
   font-size: 23px;
+}
+
+.partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 126px;
+
+/*Временно для сетки*/
+
+  background-color: #1f93c0;
 }
 
 .partners img {
@@ -297,15 +388,27 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts-phone a:hover {
-  color: #ffffff;
-
-  background-color: #fb565a;
+  color: #000000;
 }
-.footer-contacts-phone a:active {
-  color: rgba(255, 255, 255, 0.3);
 
-  background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+.footer-contacts-phone a:active {
+  opacity: 0.3;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 261px;
+  margin: 0;
+  padding: 0;
+
+/*Временно для сетки*/
+
+  background-color: #1f93c0;
 }
 
 .social-button {
@@ -321,6 +424,14 @@ input[type="radio"].visually-hidden {
 
 .button:active .social-logo {
   opacity: 0.3;
+}
+
+.footer-text {
+  margin-left: 141px;
+
+/*Временно для сетки*/
+
+  background-color: #1f93c0;
 }
 
 .footer-text-big {
