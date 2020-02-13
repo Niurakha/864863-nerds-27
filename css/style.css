@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -78,22 +83,22 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  display: flex;
-  min-height: 132px;
-
   background-color: #eeeeee;
-
-/*Временно для сетки*/
-
-  background-color: #baf5f6;
+  margin-bottom: 155px;
 }
 
 .main-navigation {
   display: flex;
+  justify-content: space-between;
 
 /*Временно для сетки*/
 
   background-color: #eabaf6;
+}
+
+.main-header-logo {
+  margin-top: 50px;
+  margin-bottom: 18px;
 }
 
 .main-header-logo img:hover {
@@ -106,7 +111,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+  width: 845px;
   margin: 0;
   padding: 0;
 
@@ -115,7 +121,17 @@ input[type="radio"].visually-hidden {
   background-color: #baf6cf;
 }
 
+.site-navigation li:last-child {
+  position: relative;
+
+  margin-left: auto;
+}
+
 .site-navigation a {
+  display: block;
+  padding-bottom: 35px;
+  padding-left: 46px;
+
   font-weight: 500;
   line-height: 30px;
   color: #000000;
@@ -130,6 +146,18 @@ input[type="radio"].visually-hidden {
   color: #bdbdbd;
 }
 
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 15px;
+  height: 15px;
+
+  background: url(../img/cart-icon.svg) no-repeat;
+}
+
 .slider-text-big {
   font-style: normal;
   font-weight: 500;
@@ -138,13 +166,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.service {
-  margin-bottom: 160px;
-}
-
 .service-list {
-  display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -154,18 +176,56 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list li {
-  width: 300px;
+  position: relative;
 
+  display: inline-block;
+  width: 300px;
+  margin-right: 96px;
 /*Временно для сетки*/
 
   background-color: #8269bc;
+}
+
+li.service-item-web::before {
+  content: "";
+  position: absolute;
+  bottom: 166px;
+
+  width: 300px;
+  height: 146px;
+
+  background: url(../img/web-site.jpg) no-repeat;
+}
+li.service-item-app::before {
+  content: "";
+  position: absolute;
+  bottom: 166px;
+
+  width: 300px;
+  height: 146px;
+
+  background: url(../img/app.jpg) no-repeat;
+}
+
+li.service-item-slide {
+  margin-right: 0;
+}
+
+li.service-item-slide::before {
+  content: "";
+  position: absolute;
+  bottom: 166px;
+
+  width: 300px;
+  height: 146px;
+
+  background: url(../img/presentation.jpg) no-repeat;
 }
 
 .service-list h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: center;
   color: #000000;
   text-transform: uppercase;
 }
