@@ -74,37 +74,26 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0;
 
-/*Временно для сетки*/
+  /*Временно для сетки*/
 
-  background-color: #f6d8ba;
+  background-color: #fce9d7;
 }
 
 .main-header {
   background-color: #eeeeee;
 }
 
-.main-navigation {
+.header-wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
-/*Временно для сетки*/
-
-  background-color: #baf6cf;
 }
 
 .main-header-logo {
-  width: 160px;
-  height: 65px;
-  padding: 49px 20px 0;
-/*Временно для сетки*/
-
-  background-color: #daa034;
+  display: flex;
 }
 
 .main-header-logo img:hover {
@@ -115,67 +104,56 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.site-navigation {
+.main-navigation {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
-  width: 440px;
-  margin: 0;
+  align-items: center;
+  padding-top: 16px;
+  width: 820px;
+}
+
+.main-navigation ul {
   padding: 0;
-/*Временно для сетки*/
-
-  background-color: #b8df0c;
-}
-
-.site-navigation li {
-  padding-bottom: 8px;
-}
-
-.cart {
-  width: 160px;
   margin: 0;
-  padding-right: 20px;
-  padding-left: 18px;
-
-  text-align: end;
-
-/*Временно для сетки*/
-
-  background-color: #8289e9;
 }
 
-.cart li {
-  position: relative;
-
-  padding-top: 75px;
-}
-
-.site-navigation a,
-.cart a {
-  padding: 25px 1px 10px 1px;
-
+.main-navigation a {
   font-weight: 500;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation li {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+
 .site-navigation a:hover,
-.cart a:hover {
+.cart-link:hover {
   color: #fb565a;
 }
 
 .site-navigation a:active,
-.cart a:active {
+.cart-link:active {
   color: #bdbdbd;
+}
+
+.cart-link {
+  position: relative;
 }
 
 .cart-link::before {
   content: "";
   position: absolute;
   bottom: 8px;
-  left: 45px;
+  right: 100px;
 
   width: 15px;
   height: 15px;
