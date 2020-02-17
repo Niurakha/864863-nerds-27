@@ -159,7 +159,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
   height: 430px;
-  margin-bottom: 250px;
+  margin-bottom: 252px;
 
   /* временно */
 
@@ -196,7 +196,7 @@ input[type="radio"].visually-hidden {
 
 .service-list h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   font-weight: 700;
   font-size: 24px;
@@ -207,13 +207,13 @@ input[type="radio"].visually-hidden {
 
 .service-item p {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .service-item-web::before {
   content: "";
   position: absolute;
-  bottom: 219px;
+  bottom: 218px;
 
   width: 300px;
   height: 146px;
@@ -224,7 +224,7 @@ input[type="radio"].visually-hidden {
 .service-item-app::before {
   content: "";
   position: absolute;
-  bottom: 219px;
+  bottom: 218px;
 
   width: 300px;
   height: 146px;
@@ -235,7 +235,7 @@ input[type="radio"].visually-hidden {
 .service-item-slide::before {
   content: "";
   position: absolute;
-  bottom: 219px;
+  bottom: 218px;
 
   width: 300px;
   height: 146px;
@@ -248,7 +248,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 16px 40px;
 
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .service-button-green {
@@ -267,6 +267,9 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+.temporarily /*временно*/ {
+  height: 1200px;
+}
 
 .index-columns {
   display: flex;
@@ -502,16 +505,19 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  width: 942px;
+  justify-content: space-between;
+}
+
 .footer-social-list {
   display: flex;
   justify-content: space-between;
-  width: 261px;
+  width: 260px;
   margin: 0;
   padding: 0;
-
-  /*Временно для сетки*/
-
-  background-color: #1f93c0;
 }
 
 .social-button {
@@ -529,24 +535,21 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.footer-text {
-  margin-left: 141px;
-
-  /*Временно для сетки*/
-
-  background-color: #1f93c0;
+.footer-text p {
+  margin: 0;
 }
 
-.footer-text-big {
+.footer-text-big{
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
 }
 
-.footer-text-small {
+p.footer-text-small {
   line-height: 22px;
   color: #444444;
+  margin-top: 10px;
 }
 
 .modal h2 {
