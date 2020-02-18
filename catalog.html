@@ -11,25 +11,31 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li class="site-navigation-current"><a>Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header-wrapper">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
+        </a>
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a class="cart-link" href="#">Корзина</a>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main class="container">
+  <main>
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <section>
-      <h2 class="visually-hidden">Фильтр товаров</h2>
-      <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
+    <div class="container">
+      <div class="catalog-columns">
+        <section class="filters">
+          <!-- <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset>
           <legend>Стоимость:</legend>
           <div class="slider-price">
@@ -108,96 +114,97 @@
           </li>
 
         </ul>
+      </div> -->
+        </section>
+        <section class="samples">
+          <h2 class="visually-hidden">Шаблоны</h2>
+          <ul class="sample-list">
+            <li class="sample-item">
+              <article>
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">Sedona</a>
+                  </h3>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+            <li class="sample-item">
+              <article>
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Pink App">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">Pink App</a>
+                  </h3>
+                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+            <li class="sample-item">
+              <article>
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop Borodinski">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">Barbershop</a>
+                  </h3>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+            <li class="sample-item">
+              <article>
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">Mishka</a>
+                  </h3>
+                  <p>Интернет-магазин вязаных игрушек</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+            <li class="sample-item">
+              <article>
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта A Plus">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">A Plus</a>
+                  </h3>
+                  <p>Лендинг курсов повышения квалификации</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+            <li class="sample-item">
+              <article>
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
+                <div class="hidden">
+                  <h3>
+                    <a class="link-title" href="#">Кваст</a>
+                  </h3>
+                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <a class="button button-price" href="#">9 900 руб.</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+          </ul>
+        </section>
       </div>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Шаблоны</h2>
-      <ul class="sample-list">
-        <li class="sample-item">
-          <article>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
-            <div>
-              <h3>
-                <a class="link-title" href="#">Sedona</a>
-              </h3>
-              <p>Информационный сайт для туристов</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-        <li class="sample-item">
-          <article>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Pink App">
-            <div>
-              <h3>
-                <a class="link-title" href="#">Pink App</a>
-              </h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-        <li class="sample-item">
-          <article>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop Borodinski">
-            <div>
-              <h3>
-                <a class="link-title" href="#">Barbershop</a>
-              </h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-        <li class="sample-item">
-          <article>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
-            <div>
-              <h3>
-                <a class="link-title" href="#">Mishka</a>
-              </h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-        <li class="sample-item">
-          <article>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта A Plus">
-            <div>
-              <h3>
-                <a class="link-title" href="#">A Plus</a>
-              </h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-        <li class="sample-item">
-          <article>
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
-            <div>
-              <h3>
-                <a class="link-title" href="#">Кваст</a>
-              </h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="button button-price" href="#">9 900 руб.</a>
-            </div>
-          </article>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-        <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
-      </ul>
-    </section>
-
+    </div>
   </main>
   <footer class="main-footer">
-    <section class="footer-contacts">
+
+    <!-- <section class="footer-contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <p class="footer-contacts-title">
         Nёrds design studio
@@ -213,32 +220,38 @@
         <img src="img/map.jpg" width="1440" height="416"
           alt="Офис студии по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">
       </p>
-    </section>
-    <div class="footer-social">
-      <ul class="footer-social-list">
-        <li>
-          <a class="button social-button button-vk" href="https://vk.com/">
-            <img class="social-logo" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-          </a>
-        </li>
-        <li>
-          <a class="button social-button button-fb" href="#">
-            <img class="social-logo" src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
-          </a>
-        </li>
-        <li>
-          <a class="button social-button button-inst" href="#">
-            <img class="social-logo" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
-          </a>
-        </li>
-      </ul>
+    </section> -->
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li>
+              <a class="button social-button button-vk" href="https://vk.com/">
+                <img class="social-logo" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+              </a>
+            </li>
+            <li>
+              <a class="button social-button button-fb" href="#">
+                <img class="social-logo" src="img/fb-icon.svg" width="12" height="22" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a class="button social-button button-inst" href="#">
+                <img class="social-logo" src="img/insta-icon.svg" width="21" height="21" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-text">
+          <p class="footer-text-big">
+            Давайте дружить, это выгодно!
+          </p>
+          <p class="footer-text-small">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </div>
     </div>
-    <p class="footer-text-big">
-      Давайте дружить, это выгодно!
-    </p>
-    <p class="footer-text-small">
-      Скидка 10% для друзей из социальных сетей.
-    </p>
   </footer>
 
   <section class="modal">
