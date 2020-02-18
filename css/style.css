@@ -111,9 +111,10 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  list-style: none;
   display: flex;
   justify-content: space-between;
+
+  list-style: none;
 }
 
 .site-navigation li {
@@ -153,7 +154,7 @@ input[type="radio"].visually-hidden {
   height: 430px;
   margin-bottom: 81px;
 
-/* временно */
+  /* временно */
 
   background-color: #929191;
 }
@@ -174,18 +175,18 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   width: 1100px;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .service-item {
   width: 300px;
-  margin-right: 100px;
-  margin-bottom: 20px;
+  margin: 0 100px 20px 0;
 }
 
 .service-item:nth-child(3n) {
@@ -203,8 +204,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-list h3 {
-  margin: 24px 0 13px;
-  margin-bottom: 17px;
+  margin: 24px 0 17px;
 
   font-weight: 700;
   font-size: 24px;
@@ -243,7 +243,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
   display: flex;
   margin-bottom: 50px;
-  padding-bottom: 38px;
+  padding-bottom: 47px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -275,9 +275,10 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
-  list-style: none;
   margin: 0;
   padding: 24px 0 0 36px;
+
+  list-style: none;
 }
 
 .features-item {
@@ -318,9 +319,7 @@ input[type="radio"].visually-hidden {
 .statistics-title {
   position: relative;
 
-  margin: 0;
-  margin-top: 210px;
-  margin-bottom: 51px;
+  margin: 210px 0 31px;
 
   font: inherit;
   font-weight: 700;
@@ -328,43 +327,39 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.statistics-list {
-  display: flex;
-  flex-wrap: wrap;
-  min-height: 127px;
-  margin: 0;
+.statistics-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  min-height: 128px;
 }
 
-.statistics-list dt {
-  width: 120px;
-
-  line-height: 18px;
-}
-
-.statistics-list dd {
-  order: -1;
-  width: 120px;
-  margin: 0;
-
+.statistics-first-row td {
   font-weight: 700;
   font-size: 45px;
   line-height: 10px;
 }
 
-.statistics-list sup {
-  font-size: 23px;
+.statistics-first-row sup {
+  font-size: 25px;
+}
+
+.statistics-second-row td {
+  width: 120px;
+
+  line-height: 18px;
 }
 
 .partners {
   margin-bottom: 81px;
-  padding-bottom: 33px;
+  padding-bottom: 15px;
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .partners-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 
@@ -375,15 +370,20 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 260px;
+  margin: 0 40px 20px 0;
+}
+
+.partners-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .partners-item a {
   align-self: center;
 }
 
-.partners-item:not(:last-child)::after {
+.partners-item:not(:nth-child(4n))::after {
   content: "";
   position: absolute;
   top: 15px;
@@ -409,8 +409,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-  margin: 0 auto;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
   padding: 77px 0 108px;
 
   font-weight: 500;
@@ -431,7 +430,7 @@ input[type="radio"].visually-hidden {
   /*Временно*/
   width: 260px;
 
-/*Временно для разметки*/
+  /*Временно для разметки*/
 
   background-color: #caf3be;
 }
@@ -453,17 +452,18 @@ input[type="radio"].visually-hidden {
 .samples {
   width: 760px;
 
-/*Временно*/
+  /*Временно*/
   margin-top: 100px;
 }
 
 .sample-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .sample-item {
@@ -542,15 +542,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-/*Временно для разметки*/
+  /*Временно для разметки*/
   min-height: 51px;
   margin: 0;
   padding: 0;
 }
 
 .pagination-item {
-  list-style: none;
   margin-right: 11px;
+
+  list-style: none;
 }
 
 .pagination-item:last-child {
@@ -606,8 +607,10 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts-wrapper {
   position: absolute;
+
   width: 319px;
   min-height: 308px;
+
   background-color: #ffffff;
 }
 
@@ -648,12 +651,13 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social-list {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   width: 260px;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .social-button {
