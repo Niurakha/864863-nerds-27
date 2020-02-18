@@ -243,7 +243,7 @@ input[type="radio"].visually-hidden {
 .index-columns {
   display: flex;
   margin-bottom: 50px;
-  padding-bottom: 47px;
+  padding-bottom: 49px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -351,7 +351,7 @@ input[type="radio"].visually-hidden {
 
 .partners {
   margin-bottom: 81px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
 
   border-bottom: 2px solid #eeeeee;
 }
@@ -601,7 +601,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.main-footer {
+.main-footer .container {
   position: relative;
 }
 
@@ -612,6 +612,8 @@ input[type="radio"].visually-hidden {
   min-height: 308px;
 
   background-color: #ffffff;
+  /*Временно*/
+  background-color: beige;
 }
 
 .footer-contacts-title {
@@ -639,8 +641,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.main-footer .container {
-  display: flex;
+.footer-map {
+  min-width: 1160px
+}
+
+.footer-map img {
+  display: block;
+  width: 100%
 }
 
 .footer-social-wrapper {
