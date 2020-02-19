@@ -1,4 +1,5 @@
 body {
+  min-width: 1160px;
   margin: 0;
   padding: 0;
 
@@ -68,8 +69,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  min-width: 1160px;
-
   background-color: #eeeeee;
 }
 
@@ -150,11 +149,10 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  min-width: 1160px;
   height: 430px;
   margin-bottom: 81px;
 
-  /* временно */
+/* временно */
 
   background-color: #929191;
 }
@@ -242,7 +240,7 @@ input[type="radio"].visually-hidden {
 
 .index-columns {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   padding-bottom: 49px;
 
   border-bottom: 2px solid #eeeeee;
@@ -319,7 +317,7 @@ input[type="radio"].visually-hidden {
 .statistics-title {
   position: relative;
 
-  margin: 210px 0 31px;
+  margin: 210px 0 28px;
 
   font: inherit;
   font-weight: 700;
@@ -328,15 +326,15 @@ input[type="radio"].visually-hidden {
 }
 
 .statistics-table {
+  min-height: 128px;
+
   border-collapse: collapse;
   border-spacing: 0;
-  min-height: 128px;
 }
 
 .statistics-first-row td {
   font-weight: 700;
   font-size: 45px;
-  line-height: 10px;
 }
 
 .statistics-first-row sup {
@@ -430,7 +428,7 @@ input[type="radio"].visually-hidden {
   /*Временно*/
   width: 260px;
 
-  /*Временно для разметки*/
+/*Временно для разметки*/
 
   background-color: #caf3be;
 }
@@ -452,7 +450,7 @@ input[type="radio"].visually-hidden {
 .samples {
   width: 760px;
 
-  /*Временно*/
+/*Временно*/
   margin-top: 100px;
 }
 
@@ -542,7 +540,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-  /*Временно для разметки*/
+/*Временно для разметки*/
   min-height: 51px;
   margin: 0;
   padding: 0;
@@ -605,18 +603,25 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
+.footer-contacts {
+  margin-bottom: 68px;
+}
+
 .footer-contacts-wrapper {
   position: absolute;
+  top: 54px;
 
+  display: flex;
+  flex-direction: column;
   width: 319px;
   min-height: 308px;
 
   background-color: #ffffff;
-  /*Временно*/
-  background-color: beige;
 }
 
 .footer-contacts-title {
+  margin: 49px 0 23px 50px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -624,8 +629,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts-adress {
+  margin: 0 0 16px 50px;
+
   line-height: 18px;
   color: #666666;
+}
+
+.footer-contacts-phone {
+  margin: 0 0 33px 50px;
 }
 
 .footer-contacts-phone,
@@ -641,30 +652,49 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.footer-contacts-wrapper .button {
+  align-self: center;
+  padding: 16px 45px;
+
+  border-radius: 3px;
+}
+
 .footer-map {
-  min-width: 1160px
+  height: 416px;
+  margin: 0;
 }
 
 .footer-map img {
   display: block;
-  width: 100%
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .footer-social-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 942px;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 260px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.footer-social-list li {
+  margin-right: 11px;
+  margin-bottom: 10px;
+}
+.footer-social-list li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .social-button {
@@ -682,11 +712,13 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.footer-text p {
-  margin: 0;
+.footer-text {
+  padding-top: 7px;
 }
 
 .footer-text-big {
+  margin: 0 0 10px 0;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -694,7 +726,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-text-small {
-  margin-top: 10px;
+  margin: 0;
 
   line-height: 22px;
   color: #444444;
