@@ -693,6 +693,7 @@ input[type="radio"].visually-hidden {
   margin-right: 11px;
   margin-bottom: 10px;
 }
+
 .footer-social-list li:nth-child(3n) {
   margin-right: 0;
 }
@@ -732,14 +733,46 @@ input[type="radio"].visually-hidden {
   color: #444444;
 }
 
-.modal h2 {
+.modal-feedback {
+  position: fixed;
+  top: 120px;
+  left: 50%;
+
+  display: none;
+  box-sizing: border-box;
+  width: 960px;
+  margin-left: -480px;
+  padding: 67px 100px 84px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.modal-feedback h2 {
+  margin: 0 0 41px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000000;
 }
 
+.feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 760px;
+}
+
+.modal-feedback p {
+  margin: 0;
+}
+
 .feedback label {
+  display: block;
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 18px;
   color: #000000;
@@ -747,11 +780,29 @@ input[type="radio"].visually-hidden {
 
 .feedback input,
 .feedback textarea {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 12px;
+  padding-bottom: 14px;
+
+  font: inherit;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.5);
 
   border: solid 2px #d7dcde;
   outline: none;
+}
+
+.feedback p:last-of-type {
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 41px;
+}
+
+.feedback textarea {
+  width: 100%;
+  min-height: 117px;
+  padding-top: 9px;
 }
 
 .feedback input:hover,
@@ -772,13 +823,65 @@ input[type="radio"].visually-hidden {
   border: solid 2px #e74246;
 }
 
+
 .modal-button {
+  padding: 16px 83px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   font-family: Roboto;
+
+  border-radius: 3px;
 }
 
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 23px;
+  height: 23px;
+
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -2px;
+
+  width: 27px;
+  height: 5px;
+
+  background-color: #e74246;
+  opacity: 0.3;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-close:hover::before,
+.modal-close:hover::after,
+.modal-close:focus::before,
+.modal-close:focus::after {
+  opacity: 1;
+}
+
+.modal-close:active::before,
+.modal-close:active::after {
+  outline: none;
+  opacity: 0.1;
+}
 
 
 /*

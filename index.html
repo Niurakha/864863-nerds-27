@@ -215,24 +215,26 @@
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal-feedback">
     <h2>Напишите нам</h2>
     <form class="feedback" action="https://echo.htmlacademy.ru" method="POST">
-      <p>
-        <label for="appointment-name">Ваше имя:</label>
-        <input type="text" name="name" id="appointment-name" placeholder="Имя Фамилия" value="">
-      </p>
-      <p>
-        <label for="appointment-e-mail">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="appointment-e-mail" placeholder="email@example.com" value="">
-      </p>
-      <p>
-        <label for="letter-field">Текст письма:</label>
-        <textarea name="letter" id="letter-field">В свободной форме</textarea>
-      </p>
-      <button class="button modal-button" type="submit">Отправить</button>
+        <p>
+          <label for="appointment-name">Ваше имя:</label>
+          <input type="text" name="name" id="appointment-name" placeholder="Имя Фамилия" value="">
+        </p>
+        <p>
+          <label for="appointment-e-mail">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="appointment-e-mail" placeholder="email@example.com" value="">
+        </p>
+        <p>
+          <label for="letter-field">Текст письма:</label>
+          <textarea name="letter" id="letter-field">В свободной форме</textarea>
+        </p>
+        <button class="button modal-button" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </section>
 
 </body>
