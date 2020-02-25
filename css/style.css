@@ -351,6 +351,7 @@ input[type="radio"].visually-hidden {
 .statistics-first-row td {
   font-weight: 700;
   font-size: 45px;
+  line-height: 45px;
 }
 
 .statistics-first-row sup {
