@@ -105,17 +105,18 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation a {
+  position: relative;
+
   font-weight: 500;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  position: relative;
 }
 
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
   flex-basis: 489px;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -127,13 +128,15 @@ input[type="radio"].visually-hidden {
 
 .site-navigation .current-link::after,
 .main-navigation a:visited::after {
-  position: absolute;
   content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+
   width: 100%;
   height: 2px;
+
   background-color: #fb565a;
-  left: 0;
-  bottom: -11px;
 }
 
 
