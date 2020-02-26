@@ -917,14 +917,16 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 319px;
   min-height: 308px;
+  padding: 49px 53px 28px;
 
   background-color: #ffffff;
 }
 
 .footer-contacts-title {
-  margin: 49px 0 24px 50px;
+  margin: 0 0 22px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -933,14 +935,14 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts-adress {
-  margin: 0 0 16px 50px;
+  margin: 0 0 16px 0;
 
   line-height: 18px;
   color: #666666;
 }
 
 .footer-contacts-phone {
-  margin: 0 0 33px 50px;
+  margin: 0 0 34px 0;
 }
 
 .footer-contacts-phone,
@@ -959,7 +961,7 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts-wrapper .button {
   align-self: center;
-  padding: 16px 45px;
+  padding: 16px 41px;
 
   border-radius: 3px;
 }
