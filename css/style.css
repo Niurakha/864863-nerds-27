@@ -848,9 +848,24 @@ input[type="radio"].visually-hidden {
 
 .sample-item .hidden {
   display: none;
+  box-sizing: border-box;
+  width: 360px;
+  padding: 25px 60px 40px;
 }
 
-.sample-item:hover::before {
+.sample-item h3 {
+  margin: 0 0 15px 0;
+}
+
+.sample-item p {
+  margin: 0 0 31px 0;
+
+  line-height: 18px;
+  color: #666666;
+}
+
+.sample-item:hover::before,
+.sample-item:focus::before {
   opacity: 1;
 }
 
@@ -862,7 +877,7 @@ input[type="radio"].visually-hidden {
 
   display: block;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
 
   text-align: center;
 
@@ -886,21 +901,9 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hidden div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 240px;
-  margin: 0 auto;
-}
-
-.sample-item p {
-  line-height: 18px;
-  color: #666666;
-}
-
 .button-price {
-  padding: 16px 60px;
+  display: inline-block;
+  padding: 15px 60px;
 
   font-weight: 500;
   line-height: 18px;
