@@ -703,8 +703,8 @@ input[type="radio"].visually-hidden {
 
 .filter-input+label:hover::before,
 .filter-input:checked+label:hover::after,
-.filter-input+label:focus::before,
-.filter-input:checked+label:focus::after {
+.filter-input:focus+label::before,
+.filter-input:checked:focus+label::after {
   opacity: 1;
 }
 
