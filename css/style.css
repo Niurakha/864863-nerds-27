@@ -877,7 +877,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sample-item:hover .hidden,
-.sample-item:focus .hidden {
+.sample-item:focus-within .hidden {
   position: absolute;
   bottom: 7px;
   z-index: 1;
