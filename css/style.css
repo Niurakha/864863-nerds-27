@@ -82,6 +82,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-logo {
   display: flex;
+  z-index: 1;
 }
 
 .main-header-logo img:hover,
