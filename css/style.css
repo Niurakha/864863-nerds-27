@@ -492,7 +492,7 @@ input[type="radio"].visually-hidden {
 }
 
 .partners img:hover,
-.partners a:focus {
+.partners a:focus img {
   opacity: 1;
 }
 
