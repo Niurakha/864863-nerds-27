@@ -1304,6 +1304,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -1338,6 +1339,5 @@ input[type="radio"].visually-hidden {
 
 .modal-close:active::before,
 .modal-close:active::after {
-  outline: none;
   opacity: 0.1;
 }
