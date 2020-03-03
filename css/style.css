@@ -85,7 +85,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo img:hover,
-.main-header-logo img:focus {
+.main-header-logo:focus img {
   opacity: 0.8;
 }
 
@@ -95,7 +95,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 821px;
   padding-top: 16px;
@@ -115,10 +115,11 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.site-navigation {
+.main-navigation .site-navigation {
   display: flex;
   flex-basis: 489px;
   flex-wrap: wrap;
+  margin-right: auto;
 
   list-style: none;
 }
@@ -153,15 +154,17 @@ input[type="radio"].visually-hidden {
 
 .cart-link {
   display: block;
-  text-align: right;
   max-width: 200px;
+  margin-left: 40px;
+
+  text-align: right;
 }
 
 .cart-link::before {
   content: "";
   position: absolute;
-  left: -40px;
   bottom: 8px;
+  left: -40px;
 
   width: 15px;
   height: 15px;
