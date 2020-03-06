@@ -47,9 +47,26 @@ form.addEventListener("submit", function(evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+    if (forename.value.length == 0) {
+      forename.classList.add("error");
+    } else if (email.value.length == 0) {
+      email.classList.add("error");
+    }
   } else if (isStorageSupport) {
     localStorage.setItem("forename", forename.value);
     localStorage.setItem("email", email.value);
+  }
+});
+
+forename.addEventListener("input", function(evt) {
+  if (forename.value.length > 0) {
+    forename.classList.remove("error");
+  }
+});
+
+email.addEventListener("input", function(evt) {
+  if (email.value.length > 0) {
+    email.classList.remove("error");
   }
 });
 
