@@ -81,8 +81,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  display: flex;
   z-index: 1;
+
+  display: flex;
 }
 
 .main-header-logo img:hover,
@@ -1283,8 +1284,7 @@ input[type="radio"].visually-hidden {
   border: solid 2px #e74246;
 }
 
-
-.modal-button {
+.modal-button { 
   padding: 16px 83px;
 
   font-weight: 500;
