@@ -47,12 +47,14 @@ form.addEventListener("submit", function(evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-    if (forename.value.length == 0) {
+    if (forename.value.length === 0) {
       forename.classList.add("error");
-    } else if (email.value.length == 0) {
+    }
+    if (email.value.length === 0) {
       email.classList.add("error");
     }
-  } else if (isStorageSupport) {
+  }
+  if (isStorageSupport) {
     localStorage.setItem("forename", forename.value);
     localStorage.setItem("email", email.value);
   }
@@ -71,11 +73,9 @@ email.addEventListener("input", function(evt) {
 });
 
 window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-feedback-show")) {
-      evt.preventDefault();
-      popup.classList.remove("modal-feedback-show");
-      popup.classList.remove("modal-error");
-    }
+  if (evt.keyCode === 27 && popup.classList.contains("modal-feedback-show")) {
+    evt.preventDefault();
+    popup.classList.remove("modal-feedback-show");
+    popup.classList.remove("modal-error");
   }
 });

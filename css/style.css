@@ -1186,7 +1186,7 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback {
   position: fixed;
-  top: 120px;
+  top: 50px;
   left: 50%;
   z-index: 4;
 
@@ -1279,13 +1279,9 @@ input[type="radio"].visually-hidden {
   border: solid 2px #000000;
 }
 
-.feedback input:invalid {
-  color: #e74246;
-
-  border: solid 2px #e74246;
-}
-
-.feedback .error {
+.feedback input:invalid,
+.feedback .error,
+.feedback .error:hover {
   color: #e74246;
 
   border: solid 2px #e74246;
