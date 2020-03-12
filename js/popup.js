@@ -26,12 +26,13 @@ button.addEventListener("click", function(evt) {
   popup.classList.add("modal-feedback-show");
   if (storage.forename) {
     forename.value = storage.forename;
+    email.focus();
     if (storage.email) {
       email.value = storage.email;
       text.focus();
     }
   } else {
-    email.focus();
+    forename.focus();
   }
 });
 
