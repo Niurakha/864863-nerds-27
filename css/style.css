@@ -287,7 +287,7 @@ input[type="radio"].visually-hidden {
 #banner-1:checked:focus ~ .slider-controls label[for="banner-1"],
 #banner-2:checked:focus ~ .slider-controls label[for="banner-2"],
 #banner-3:checked:focus ~ .slider-controls label[for="banner-3"] {
-  border: 2px solid #adbcd9;
+  outline: 2px solid #adbcd9;
 }
 
 .slider-list p {
